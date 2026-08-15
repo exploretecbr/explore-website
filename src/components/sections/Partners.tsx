@@ -31,7 +31,7 @@ const benefits = [
   {
     icon: Wallet,
     title: "Receba via Pix",
-    description: "Repasses semanais, com a taxa de serviço já descontada. Sem burocracia.",
+    description: "Repasses semanais direto na sua conta. Sem burocracia.",
   },
 ]
 
@@ -102,21 +102,8 @@ export function Partners() {
               ))}
             </div>
 
-            {/* Take-rate + CTA */}
+            {/* CTA */}
             <div className="flex flex-wrap items-center gap-x-8 gap-y-5">
-              <div className="flex items-baseline gap-3">
-                <span
-                  className="font-mono font-bold text-4xl tracking-tight"
-                  style={{ color: "var(--color-sunset-300)" }}
-                >
-                  5% <span className="text-xl font-bold">+</span> 12%
-                </span>
-                <span className="text-sm leading-tight" style={{ color: "rgba(255,255,255,0.6)" }}>
-                  taxa de serviço
-                  <br />
-                  turista + parceiro
-                </span>
-              </div>
               <a href="#contato-parceiro">
                 <Button variant="primary" iconRight={<ArrowRight className="w-4 h-4" />}>
                   Cadastre seus passeios
