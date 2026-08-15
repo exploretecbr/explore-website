@@ -29,12 +29,12 @@ export function Dashboard() {
             Para gestores e IGRs
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-4">
-            Inteligência em tempo real
+            Cada visita vira inteligência
             <br />
-            <span className="text-sunset-500">para a sua IGR</span>
+            <span className="text-sunset-500">para a cidade</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            O painel do Explore é assinado pela IGR ou secretaria de turismo do município. Dados nascidos no campo — do app do turista para a tela do gestor, sem intermediários.
+            Números claros para orientar decisões — e uma segunda fonte de receita. Cada busca, reserva e interação alimenta um painel ao vivo, assinado pela IGR ou secretaria de turismo do município.
           </p>
         </motion.div>
 

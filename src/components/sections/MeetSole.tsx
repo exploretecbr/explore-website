@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Mic, Sparkles, MapPin } from "lucide-react"
+import { Sparkles, Wand2, Accessibility } from "lucide-react"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
 import telaIA from "@/assets/images/sole-screen.jpeg"
 
@@ -39,13 +39,13 @@ export function MeetSole() {
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-6">
-              Uma amiga local,
+              Diga o que você quer.
               <br />
-              <span className="text-sunset-500">sempre com você</span>
+              <span className="text-sunset-500">A Solê acha.</span>
             </h2>
 
             <p className="text-lg text-neutral-600 leading-relaxed mb-8">
-              A Solê nasceu para aproximar turistas da cultura e da história dos municípios do Rio Grande do Norte. Como uma verdadeira amiga local, ela conhece cada canto, cada história e cada segredo das cidades potiguares.
+              “Quero ver o pôr do sol hoje à tarde.” A Solê cruza seus interesses com as experiências disponíveis e sugere as opções perfeitas na hora — por voz ou texto, sem preencher formulários.
             </p>
 
             <div className="space-y-6 mt-10">
@@ -58,14 +58,14 @@ export function MeetSole() {
                 className="flex gap-4"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-[var(--radius-md)] bg-sunset-100 flex items-center justify-center">
-                  <Mic className="w-6 h-6 text-sunset-500" />
+                  <Wand2 className="w-6 h-6 text-sunset-500" />
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-lg text-ink mb-1">
-                    Conversa natural
+                    Recomendação por interesse
                   </h3>
                   <p className="text-neutral-600">
-                    Pergunte em português, como se estivesse conversando com um amigo. A Solê entende e responde de forma natural.
+                    Praia, aventura, pôr do sol, gastronomia — a Solê entende o que você curte e monta as experiências que combinam com o seu momento.
                   </p>
                 </div>
               </motion.div>
@@ -79,14 +79,17 @@ export function MeetSole() {
                 className="flex gap-4"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-[var(--radius-md)] bg-sea-100 flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-sea-500" />
+                  <Accessibility className="w-6 h-6 text-sea-500" />
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-lg text-ink mb-1">
-                    Conhecimento local
+                    Acessível para todos
+                    <span className="ml-2 align-middle inline-block px-2 py-0.5 rounded-full bg-sunset-100 text-sunset-700 text-[10px] font-bold uppercase tracking-wider">
+                      Prioridade nº 1
+                    </span>
                   </h3>
                   <p className="text-neutral-600">
-                    Ela conhece as praias, dunas, fortes, gastronomia e toda a história do RN. De Ponta Negra a Genipabu, ela está lá.
+                    Por ser por voz, a Solê é natural do nativo digital ao turista mais velho. Filtros por tipo de necessidade e recursos de acessibilidade confirmados em cada experiência.
                   </p>
                 </div>
               </motion.div>

@@ -21,12 +21,12 @@ const touchpoints = [
   {
     icon: UtensilsCrossed,
     title: "Restaurantes",
-    description: "QR Codes nas mesas para descobrir a história da gastronomia local.",
+    description: "QR Codes nas mesas para descobrir e reservar experiências gastronômicas.",
   },
   {
     icon: Signpost,
     title: "Pontos turísticos",
-    description: "Placas inteligentes com áudio-guia instantâneo via Solê.",
+    description: "Placas inteligentes com acesso direto para reservar experiências pela Solê.",
   },
   {
     icon: QrCode,

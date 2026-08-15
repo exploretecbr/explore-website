@@ -6,6 +6,8 @@ import { Footer } from "@/components/layout/Footer"
 import { Hero } from "@/components/sections/Hero"
 import { MeetSole } from "@/components/sections/MeetSole"
 import { Features } from "@/components/sections/Features"
+import { ForServices } from "@/components/sections/ForServices"
+import { Partners } from "@/components/sections/Partners"
 import { CityPresence } from "@/components/sections/CityPresence"
 import { UserJourney } from "@/components/sections/UserJourney"
 import { ManagerDivider } from "@/components/sections/ManagerDivider"
@@ -48,19 +50,19 @@ function App() {
       <Navbar />
 
       <main>
-        {/* Página 1 - Conheça o Explore */}
+        {/* Ato 1 — Para o turista */}
         <Hero />
         <MeetSole />
         <Features />
+        <ForServices />
 
-        {/* Página 2 - O Explore faz parte da cidade */}
+        {/* Ato 2 — Para o guia local */}
+        <Partners />
         <CityPresence />
         <UserJourney />
 
-        {/* Seção gestores - Para gestores e IGRs */}
+        {/* Ato 3 — Para gestores e IGRs */}
         <ManagerDivider />
-
-        {/* Página 3 - Inteligência para transformar o turismo */}
         <Dashboard />
         <DataInsights />
 

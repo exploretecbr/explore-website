@@ -7,8 +7,8 @@ import logoMark from "@/assets/icons/logo-mark.svg"
 
 const navLinks = [
   { href: "#sole", label: "Conheça a Solê" },
-  { href: "#cidade", label: "Como funciona" },
-  { href: "#gestores", label: "Para gestores" },
+  { href: "#parceiros", label: "Para guias" },
+  { href: "#gestores", label: "Para cidades" },
 ]
 
 export function Navbar() {

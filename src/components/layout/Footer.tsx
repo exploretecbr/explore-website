@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button"
 
 const footerLinks = {
   produto: [
-    { label: "Funcionalidades", href: "#conheca" },
-    { label: "Para cidades", href: "#cidade" },
-    { label: "Dashboard", href: "#dashboard" },
+    { label: "Experiências", href: "#conheca" },
+    { label: "Conheça a Solê", href: "#sole" },
+    { label: "Para guias", href: "#parceiros" },
+    { label: "Para cidades", href: "#gestores" },
   ],
   empresa: [
     { label: "Sobre nós", href: "#" },
@@ -36,7 +37,7 @@ export function Footer() {
               Explore
             </span>
             <p className="text-neutral-400 text-base leading-relaxed mb-16 max-w-sm">
-              A plataforma de turismo inteligente que conecta visitantes à cultura e história do Rio Grande do Norte.
+              O marketplace de experiências do Rio Grande do Norte — conectando turistas a guias locais, com a Solê para achar o passeio perfeito.
             </p>
             <div className="mt-10">
               <a href="#qrcode">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Plane, Smartphone, Compass, Heart } from "lucide-react"
+import { Plane, Sparkles, CalendarCheck, Heart } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 interface JourneyStep {
@@ -14,25 +14,25 @@ const steps: JourneyStep[] = [
     icon: Plane,
     step: "01",
     title: "Chegada",
-    description: "Você chega ao RN e encontra QR Codes do Explore no aeroporto, rodoviária ou hotel.",
+    description: "Você chega ao RN e baixa o app pelo QR Code no aeroporto, rodoviária ou hotel.",
   },
   {
-    icon: Smartphone,
+    icon: Sparkles,
     step: "02",
-    title: "Download",
-    description: "Um scan rápido e o app está no seu celular. A Solê te dá as boas-vindas.",
+    title: "Descubra",
+    description: "Diga seus interesses à Solê ou explore o mapa. Filtre por categoria, preço e avaliação.",
   },
   {
-    icon: Compass,
+    icon: CalendarCheck,
     step: "03",
-    title: "Exploração",
-    description: "Pergunte o que quiser, monte roteiros, descubra lugares escondidos e histórias únicas.",
+    title: "Reserve",
+    description: "Escolha data e pessoas, pague no Pix ou cartão e receba a confirmação na hora.",
   },
   {
     icon: Heart,
     step: "04",
-    title: "Encantamento",
-    description: "Viva experiências autênticas e leve memórias inesquecíveis do Rio Grande do Norte.",
+    title: "Viva",
+    description: "Encontre seu guia local, viva a experiência e avalie para ajudar outros viajantes.",
   },
 ]
 
@@ -52,10 +52,10 @@ export function UserJourney() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-4">
             Da chegada à
             <br />
-            <span className="text-sea-500">descoberta</span>
+            <span className="text-sea-500">experiência</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            Uma experiência fluida do primeiro ao último momento da sua viagem.
+            Uma jornada fluida — do primeiro scan à experiência vivida.
           </p>
         </motion.div>
 
