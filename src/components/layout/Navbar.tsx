@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Menu, X, Smartphone, LogIn } from "lucide-react"
+import { Menu, X, LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 import { cn } from "@/lib/utils"
 import logoMark from "@/assets/icons/logo-mark.svg"
 
 const navLinks = [
   { href: "#sole", label: "Conheça a Solê" },
-  { href: "#cidade", label: "Como funciona" },
-  { href: "#gestores", label: "Para gestores" },
+  { href: "#parceiros", label: "Para prestadores" },
+  { href: "#gestores", label: "Para cidades" },
 ]
 
 export function Navbar() {
@@ -45,12 +46,12 @@ export function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[15px] font-semibold text-neutral-600 hover:text-ink transition-colors"
+              className="text-[15px] font-semibold text-neutral-600 hover:text-ink transition-colors whitespace-nowrap"
             >
               {link.label}
             </a>
@@ -58,23 +59,19 @@ export function Navbar() {
         </div>
 
         {/* CTAs */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <a href="https://insights.explore.tec.br" target="_blank" rel="noopener noreferrer">
             <Button variant="ghost" size="sm" iconLeft={<LogIn className="w-4 h-4" />}>
               Entrar
             </Button>
           </a>
-          <a href="#qrcode">
-            <Button variant="primary" iconLeft={<Smartphone className="w-[18px] h-[18px]" />}>
-              Baixe o app
-            </Button>
-          </a>
+          <DownloadAppButton />
         </div>
 
         {/* Mobile menu button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden p-2 -mr-2 text-ink"
+          className="lg:hidden p-2 -mr-2 text-ink"
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -87,7 +84,7 @@ export function Navbar() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          className="md:hidden bg-white border-b border-neutral-200 shadow-[var(--shadow-md)]"
+          className="lg:hidden bg-white border-b border-neutral-200 shadow-[var(--shadow-md)]"
         >
           <div className="container py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
@@ -100,15 +97,7 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a href="#qrcode" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button
-                variant="primary"
-                className="w-full mt-2"
-                iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
-              >
-                Baixe o app
-              </Button>
-            </a>
+            <DownloadAppButton className="w-full mt-2" />
             <a
               href="https://insights.explore.tec.br"
               target="_blank"

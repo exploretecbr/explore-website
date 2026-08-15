@@ -22,12 +22,12 @@ const touchpoints = [
   {
     icon: UtensilsCrossed,
     title: "Restaurantes",
-    description: "QR Codes nas mesas para descobrir a história da gastronomia local.",
+    description: "QR Codes nas mesas para descobrir e reservar experiências gastronômicas.",
   },
   {
     icon: Signpost,
     title: "Pontos turísticos",
-    description: "Placas inteligentes com áudio-guia instantâneo via Solê.",
+    description: "Placas inteligentes com acesso direto para reservar experiências pela Solê.",
   },
   {
     icon: QrCode,
@@ -55,7 +55,7 @@ export function CityPresence() {
             <span className="text-sunset-500">da cidade</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            Ao chegar no Rio Grande do Norte, você encontra o Explore em todos os lugares. É só apontar o celular e começar a descobrir.
+            Ao chegar no seu destino, você encontra o Explore em todos os lugares. É só apontar o celular e começar a descobrir.
           </p>
         </motion.div>
 

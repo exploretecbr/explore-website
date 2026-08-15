@@ -67,9 +67,9 @@ export function ManagerDivider() {
             className="text-lg leading-relaxed mb-10"
             style={{ color: "rgba(255,255,255,0.82)", maxWidth: "56ch" }}
           >
-            Nenhum sistema captura o comportamento do turista em tempo real. Gestores dependem de pesquisas
-            anuais e relatórios agregados — dados lentos que geram políticas lentas e oportunidades perdidas.
-            O Explore fecha esse gap com dado nascido no campo.
+            Gestores dependem de pesquisas anuais e relatórios agregados — dados lentos que geram
+            políticas lentas e oportunidades perdidas. Como o marketplace movimenta buscas e reservas
+            todos os dias, o Explore fecha esse gap com dado nascido no campo.
           </motion.p>
 
           {/* Three contrast cards */}

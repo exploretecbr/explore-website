@@ -1,15 +1,16 @@
-import { Smartphone, Mail, Globe, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, Globe, Send } from "lucide-react"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 
 const footerLinks = {
   produto: [
-    { label: "Funcionalidades", href: "#conheca" },
-    { label: "Para cidades", href: "#cidade" },
-    { label: "Dashboard", href: "#dashboard" },
+    { label: "Experiências", href: "#conheca" },
+    { label: "Conheça a Solê", href: "#sole" },
+    { label: "Para prestadores", href: "#parceiros" },
+    { label: "Para cidades", href: "#gestores" },
   ],
   empresa: [
     { label: "Sobre nós", href: "#" },
-    { label: "Contato", href: "#" },
+    { label: "Contato", href: "mailto:contato@explore.tec.br" },
     { label: "Imprensa", href: "#" },
   ],
   legal: [
@@ -36,17 +37,10 @@ export function Footer() {
               Explore
             </span>
             <p className="text-neutral-400 text-base leading-relaxed mb-16 max-w-sm">
-              A plataforma de turismo inteligente que conecta visitantes à cultura e história do Rio Grande do Norte.
+              O marketplace de experiências da sua cidade — conectando turistas a prestadores locais, com a Solê para achar o passeio perfeito.
             </p>
             <div className="mt-10">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
+              <DownloadAppButton />
             </div>
           </div>
 
@@ -111,7 +105,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-neutral-500 text-sm">
-            © 2026 Explore · Feito com carinho no Rio Grande do Norte
+            © 2026 Explore · Feito com carinho para todo turista
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (

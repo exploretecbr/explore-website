@@ -1,31 +1,31 @@
 import { motion } from "framer-motion"
-import { MessageCircleQuestion, BookOpen, MapPin, Route } from "lucide-react"
+import { Map, Sparkles, CalendarCheck, Star } from "lucide-react"
 import { FeatureCard } from "@/components/shared/FeatureCard"
 
 const features = [
   {
-    icon: MessageCircleQuestion,
-    title: "Responde suas dúvidas",
+    icon: Map,
+    title: "Descubra e filtre",
     description:
-      "Pergunte sobre horários, preços, como chegar, o que vestir. A Solê tem todas as respostas na ponta da língua.",
+      "Mapa e lista de experiências pela cidade. Filtre por categoria, preço, idioma do prestador e avaliação até achar o passeio certo.",
   },
   {
-    icon: BookOpen,
-    title: "Conta histórias",
+    icon: Sparkles,
+    title: "Concierge Solê",
     description:
-      "Descubra as lendas, curiosidades e a história por trás de cada lugar. Turismo cultural de verdade.",
+      "Diga seus interesses e a Solê encontra as experiências perfeitas — por voz ou texto, sem digitar formulários.",
   },
   {
-    icon: MapPin,
-    title: "Recomenda atrações",
+    icon: CalendarCheck,
+    title: "Reserve e pague",
     description:
-      "Baseado no seu perfil e preferências, a Solê sugere os melhores pontos turísticos, restaurantes e experiências.",
+      "Escolha data e número de pessoas, pague no Pix ou cartão e receba a confirmação. Tudo dentro do app.",
   },
   {
-    icon: Route,
-    title: "Cria roteiros personalizados",
+    icon: Star,
+    title: "Avaliações reais",
     description:
-      "Diga quantos dias você tem e o que gosta. A Solê monta um roteiro completo, otimizado e sob medida.",
+      "Notas, distribuição por estrelas, tags e fotos de quem já foi — para você reservar com confiança.",
   },
 ]
 
@@ -41,14 +41,14 @@ export function Features() {
           transition={{ duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="eyebrow mb-4 block">Como a Solê ajuda você</span>
+          <span className="eyebrow mb-4 block">O app do turista · grátis</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-4">
-            Tudo que você precisa,
+            Todas as experiências
             <br />
-            <span className="text-sea-500">em um só lugar</span>
+            <span className="text-sea-500">num só app</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            A Solê é mais do que um guia. É sua companheira de viagem inteligente.
+            Do descobrir ao pagar — e disponível em português, inglês e espanhol.
           </p>
         </motion.div>
 

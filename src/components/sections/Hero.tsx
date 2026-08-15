@@ -1,8 +1,9 @@
 import { motion } from "framer-motion"
-import { Smartphone, Play, Sun } from "lucide-react"
+import { Play, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
-import telaInicial from "@/assets/images/map-screen.jpeg"
+import mapScreen from "@/assets/images/map-screen.jpeg"
 
 export function Hero() {
   return (
@@ -25,41 +26,33 @@ export function Hero() {
             >
               <span className="eyebrow flex items-center gap-2">
                 <Sun className="w-4 h-4 text-sea-500" />
-                Rio Grande do Norte
+                Turismo local
               </span>
             </motion.div>
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-[68px] font-display font-extrabold leading-[1.02] tracking-tight text-ink mb-6">
-              Descubra o RN{" "}
+              Viva as melhores{" "}
+              <span className="text-sunset-500">experiências</span>
               <br className="hidden sm:block" />
-              com a{" "}
-              <span className="text-sunset-500">Solê</span>
+              {" "}da sua cidade
             </h1>
 
             {/* Lead */}
             <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-12">
-              Sua assistente virtual de turismo. Conheça a cultura, história e os melhores lugares do Rio Grande do Norte de um jeito único e personalizado.
+              Passeios de buggy, pôr do sol, mergulho, gastronomia — descubra, reserve e pague em um só app. Com prestadores locais de verdade e a Solê, sua concierge de IA, para achar o que combina com você.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  iconLeft={<Smartphone className="w-5 h-5" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
-              <a href="#cidade">
+              <DownloadAppButton size="lg" iconClassName="w-5 h-5" />
+              <a href="#parceiros">
                 <Button
                   variant="outline"
                   size="lg"
                   iconLeft={<Play className="w-[18px] h-[18px]" />}
                 >
-                  Veja como funciona
+                  Sou prestador local
                 </Button>
               </a>
             </div>
@@ -99,9 +92,13 @@ export function Hero() {
             </div>
 
             <PhoneMockup>
-              <img
-                src={telaInicial}
-                alt="Tela inicial do Explore"
+              <video
+                src="/videos/tourist-app.mp4"
+                poster={mapScreen}
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-full object-cover"
               />
             </PhoneMockup>

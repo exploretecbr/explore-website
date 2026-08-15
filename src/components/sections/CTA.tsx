@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
-import { Smartphone, Building, ArrowRight } from "lucide-react"
+import { Building, BadgeCheck, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 import { SoleAvatar } from "@/components/shared/SoleAvatar"
 
 export function CTA() {
@@ -31,51 +32,76 @@ export function CTA() {
               className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-16"
               style={{ color: '#EC5E37' }}
             >
-              A Solê está esperando você
+              Sua próxima experiência
+              <br />
+              começa aqui
             </h2>
 
             <div className="flex justify-center mt-10">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  iconLeft={<Smartphone className="w-5 h-5" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
+              <DownloadAppButton size="lg" iconClassName="w-5 h-5" />
             </div>
           </div>
         </motion.div>
 
-        {/* Secondary CTA - For partners */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-sea-50 rounded-[var(--radius-xl)] p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-[var(--radius-lg)] bg-sea-100 flex items-center justify-center flex-shrink-0">
-              <Building className="w-7 h-7 text-sea-600" />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-xl text-ink mb-1">
-                É gestor público ou parceiro?
-              </h3>
-              <p className="text-neutral-600">
-                Leve o Explore para o seu município e transforme o turismo local.
-              </p>
-            </div>
-          </div>
-          <Button
-            variant="secondary"
-            iconRight={<ArrowRight className="w-4 h-4" />}
+        {/* Secondary CTAs - Guides + Cities */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Prestadores */}
+          <motion.div
+            id="contato-parceiro"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="bg-sunset-50 rounded-[var(--radius-xl)] p-6 md:p-8 flex flex-col gap-5 scroll-mt-24"
           >
-            Fale conosco
-          </Button>
-        </motion.div>
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-[var(--radius-lg)] bg-sunset-100 flex items-center justify-center flex-shrink-0">
+                <BadgeCheck className="w-7 h-7 text-sunset-500" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl text-ink mb-1">
+                  É prestador local?
+                </h3>
+                <p className="text-neutral-600">
+                  Cadastre seus passeios e comece a receber reservas.
+                </p>
+              </div>
+            </div>
+            <a href="mailto:contato@explore.tec.br">
+              <Button variant="primary" className="w-full" iconRight={<ArrowRight className="w-4 h-4" />}>
+                Virar parceiro
+              </Button>
+            </a>
+          </motion.div>
+
+          {/* Cidades / IGRs */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="bg-sea-50 rounded-[var(--radius-xl)] p-6 md:p-8 flex flex-col gap-5"
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-14 h-14 rounded-[var(--radius-lg)] bg-sea-100 flex items-center justify-center flex-shrink-0">
+                <Building className="w-7 h-7 text-sea-600" />
+              </div>
+              <div>
+                <h3 className="font-display font-bold text-xl text-ink mb-1">
+                  É gestor público ou IGR?
+                </h3>
+                <p className="text-neutral-600">
+                  Leve o Explore para o seu município e acesse o painel de inteligência.
+                </p>
+              </div>
+            </div>
+            <a href="mailto:contato@explore.tec.br">
+              <Button variant="secondary" className="w-full" iconRight={<ArrowRight className="w-4 h-4" />}>
+                Fale conosco
+              </Button>
+            </a>
+          </motion.div>
+        </div>
       </div>
     </section>
   )
