@@ -56,7 +56,7 @@ function App() {
         <Features />
         <ForServices />
 
-        {/* Ato 2 — Para o guia local */}
+        {/* Ato 2 — Para o prestador local */}
         <Partners />
         <CityPresence />
         <UserJourney />

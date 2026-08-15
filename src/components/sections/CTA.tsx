@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
-import { Smartphone, Building, BadgeCheck, ArrowRight } from "lucide-react"
+import { Building, BadgeCheck, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 import { SoleAvatar } from "@/components/shared/SoleAvatar"
 
 export function CTA() {
@@ -37,22 +38,14 @@ export function CTA() {
             </h2>
 
             <div className="flex justify-center mt-10">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  iconLeft={<Smartphone className="w-5 h-5" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
+              <DownloadAppButton size="lg" iconClassName="w-5 h-5" />
             </div>
           </div>
         </motion.div>
 
         {/* Secondary CTAs - Guides + Cities */}
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Guias */}
+          {/* Prestadores */}
           <motion.div
             id="contato-parceiro"
             initial={{ opacity: 0, y: 20 }}
@@ -67,16 +60,18 @@ export function CTA() {
               </div>
               <div>
                 <h3 className="font-display font-bold text-xl text-ink mb-1">
-                  É guia ou prestador local?
+                  É prestador local?
                 </h3>
                 <p className="text-neutral-600">
                   Cadastre seus passeios e comece a receber reservas.
                 </p>
               </div>
             </div>
-            <Button variant="primary" iconRight={<ArrowRight className="w-4 h-4" />}>
-              Virar parceiro
-            </Button>
+            <a href="mailto:contato@explore.tec.br">
+              <Button variant="primary" className="w-full" iconRight={<ArrowRight className="w-4 h-4" />}>
+                Virar parceiro
+              </Button>
+            </a>
           </motion.div>
 
           {/* Cidades / IGRs */}
@@ -100,9 +95,11 @@ export function CTA() {
                 </p>
               </div>
             </div>
-            <Button variant="secondary" iconRight={<ArrowRight className="w-4 h-4" />}>
-              Fale conosco
-            </Button>
+            <a href="mailto:contato@explore.tec.br">
+              <Button variant="secondary" className="w-full" iconRight={<ArrowRight className="w-4 h-4" />}>
+                Fale conosco
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>

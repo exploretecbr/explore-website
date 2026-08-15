@@ -65,7 +65,7 @@ export function Partners() {
               style={{ color: "var(--color-sunset-300)" }}
             >
               <BadgeCheck className="w-4 h-4" />
-              O app do parceiro · para guias locais
+              O app do parceiro · para prestadores locais
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white mb-6">
@@ -75,7 +75,7 @@ export function Partners() {
             </h2>
 
             <p className="text-lg leading-relaxed mb-10" style={{ color: "rgba(255,255,255,0.72)" }}>
-              O Explore Partners dá ao guia local uma vitrine, uma agenda e um caixa — tudo em um app.
+              O Explore Partners dá ao prestador local uma vitrine, uma agenda e um caixa — tudo em um app.
               Você cuida da experiência; a gente cuida do resto.
             </p>
 

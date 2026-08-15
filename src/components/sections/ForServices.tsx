@@ -43,21 +43,21 @@ const rules: Rule[] = [
     tone: "sea",
     title: "Orientações do passeio",
     description:
-      "O que levar, ponto de encontro e informações práticas — preenchidos pelo guia em cada passeio.",
+      "O que levar, ponto de encontro e informações práticas — preenchidos pelo prestador em cada passeio.",
   },
   {
     icon: ShieldCheck,
     tone: "sunset",
     title: "Segurança & credenciamento",
     description:
-      "Identidade verificada, Cadastur, seguro e CNH compõem o nível de confiança do guia.",
+      "Identidade verificada, Cadastur, seguro e CNH compõem o nível de confiança do prestador.",
   },
   {
     icon: Star,
     tone: "sand",
     title: "Avaliações que engajam",
     description:
-      "Nota, distribuição por estrelas, tags e fotos — visíveis em cada passeio e no perfil do guia.",
+      "Nota, distribuição por estrelas, tags e fotos — visíveis em cada passeio e no perfil do prestador.",
   },
 ]
 

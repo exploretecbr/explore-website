@@ -7,7 +7,7 @@ const features = [
     icon: Map,
     title: "Descubra e filtre",
     description:
-      "Mapa e lista de experiências pela cidade. Filtre por categoria, preço, idioma do guia e avaliação até achar o passeio certo.",
+      "Mapa e lista de experiências pela cidade. Filtre por categoria, preço, idioma do prestador e avaliação até achar o passeio certo.",
   },
   {
     icon: Sparkles,

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
-import { Smartphone, Play, Sun } from "lucide-react"
+import { Play, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
 import mapScreen from "@/assets/images/map-screen.jpeg"
 
@@ -39,27 +40,19 @@ export function Hero() {
 
             {/* Lead */}
             <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-12">
-              Passeios de buggy, pôr do sol, mergulho, gastronomia — descubra, reserve e pague em um só app. Com guias locais de verdade e a Solê, sua concierge de IA, para achar o que combina com você.
+              Passeios de buggy, pôr do sol, mergulho, gastronomia — descubra, reserve e pague em um só app. Com prestadores locais de verdade e a Solê, sua concierge de IA, para achar o que combina com você.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  size="lg"
-                  iconLeft={<Smartphone className="w-5 h-5" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
+              <DownloadAppButton size="lg" iconClassName="w-5 h-5" />
               <a href="#parceiros">
                 <Button
                   variant="outline"
                   size="lg"
                   iconLeft={<Play className="w-[18px] h-[18px]" />}
                 >
-                  Sou guia local
+                  Sou prestador local
                 </Button>
               </a>
             </div>

@@ -8,7 +8,7 @@ import dashboard from "@/assets/images/dashboard2.webp"
 const stats = [
   { icon: Users, label: "Usuários ativos", value: 5208, delta: 12.4, iconTone: "sunset" as const },
   { icon: MapPin, label: "Visitantes totais", value: 34944, delta: 8.1, iconTone: "sea" as const },
-  { icon: Headphones, label: "Plays do guia", value: 17241, delta: 21.3, iconTone: "sand" as const },
+  { icon: Headphones, label: "Plays do prestador", value: 17241, delta: 21.3, iconTone: "sand" as const },
   { icon: MessageCircle, label: "Perguntas feitas", value: 41328, delta: 3.2, iconTone: "ink" as const },
 ]
 

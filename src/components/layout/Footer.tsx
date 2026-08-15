@@ -1,16 +1,16 @@
-import { Smartphone, Mail, Globe, Send } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Mail, Globe, Send } from "lucide-react"
+import { DownloadAppButton } from "@/components/shared/DownloadAppButton"
 
 const footerLinks = {
   produto: [
     { label: "Experiências", href: "#conheca" },
     { label: "Conheça a Solê", href: "#sole" },
-    { label: "Para guias", href: "#parceiros" },
+    { label: "Para prestadores", href: "#parceiros" },
     { label: "Para cidades", href: "#gestores" },
   ],
   empresa: [
     { label: "Sobre nós", href: "#" },
-    { label: "Contato", href: "#" },
+    { label: "Contato", href: "mailto:contato@explore.tec.br" },
     { label: "Imprensa", href: "#" },
   ],
   legal: [
@@ -37,17 +37,10 @@ export function Footer() {
               Explore
             </span>
             <p className="text-neutral-400 text-base leading-relaxed mb-16 max-w-sm">
-              O marketplace de experiências do Rio Grande do Norte — conectando turistas a guias locais, com a Solê para achar o passeio perfeito.
+              O marketplace de experiências do Rio Grande do Norte — conectando turistas a prestadores locais, com a Solê para achar o passeio perfeito.
             </p>
             <div className="mt-10">
-              <a href="#qrcode">
-                <Button
-                  variant="primary"
-                  iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
-                >
-                  Baixe o app
-                </Button>
-              </a>
+              <DownloadAppButton />
             </div>
           </div>
 

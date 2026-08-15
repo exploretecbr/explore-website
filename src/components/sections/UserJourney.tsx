@@ -32,7 +32,7 @@ const steps: JourneyStep[] = [
     icon: Heart,
     step: "04",
     title: "Viva",
-    description: "Encontre seu guia local, viva a experiência e avalie para ajudar outros viajantes.",
+    description: "Encontre seu prestador local, viva a experiência e avalie para ajudar outros viajantes.",
   },
 ]
 
