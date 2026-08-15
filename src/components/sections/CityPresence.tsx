@@ -54,7 +54,7 @@ export function CityPresence() {
             <span className="text-sunset-500">da cidade</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            Ao chegar no Rio Grande do Norte, você encontra o Explore em todos os lugares. É só apontar o celular e começar a descobrir.
+            Ao chegar no seu destino, você encontra o Explore em todos os lugares. É só apontar o celular e começar a descobrir.
           </p>
         </motion.div>
 

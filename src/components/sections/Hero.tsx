@@ -26,7 +26,7 @@ export function Hero() {
             >
               <span className="eyebrow flex items-center gap-2">
                 <Sun className="w-4 h-4 text-sea-500" />
-                Rio Grande do Norte
+                Turismo local
               </span>
             </motion.div>
 
@@ -35,7 +35,7 @@ export function Hero() {
               Viva as melhores{" "}
               <span className="text-sunset-500">experiências</span>
               <br className="hidden sm:block" />
-              {" "}do RN
+              {" "}da sua cidade
             </h1>
 
             {/* Lead */}

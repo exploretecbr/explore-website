@@ -37,7 +37,7 @@ export function Footer() {
               Explore
             </span>
             <p className="text-neutral-400 text-base leading-relaxed mb-16 max-w-sm">
-              O marketplace de experiências do Rio Grande do Norte — conectando turistas a prestadores locais, com a Solê para achar o passeio perfeito.
+              O marketplace de experiências da sua cidade — conectando turistas a prestadores locais, com a Solê para achar o passeio perfeito.
             </p>
             <div className="mt-10">
               <DownloadAppButton />
@@ -105,7 +105,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-neutral-500 text-sm">
-            © 2026 Explore · Feito com carinho no Rio Grande do Norte
+            © 2026 Explore · Feito com carinho para todo turista
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (

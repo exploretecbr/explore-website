@@ -14,7 +14,7 @@ const steps: JourneyStep[] = [
     icon: Plane,
     step: "01",
     title: "Chegada",
-    description: "Você chega ao RN e baixa o app pelo QR Code no aeroporto, rodoviária ou hotel.",
+    description: "Você chega ao destino e baixa o app pelo QR Code no aeroporto, rodoviária ou hotel.",
   },
   {
     icon: Sparkles,
